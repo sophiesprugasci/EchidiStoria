@@ -1,0 +1,134 @@
+/*Generale*/
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: medium;
+    background-color: #fcfcfc;
+    color: black;
+    list-style-type: disc;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/*intro*/
+.pop-up {
+    display: none;
+    background-color: black;
+    color: white;
+    position: fixed;
+    /* top: 50%;
+    left: 50%; */
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 90vh;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    overflow: auto;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*nav*/
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcfcfc;
+    color: black;
+    padding:0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-button {
+    background-color: #fcfcfc;
+    background-image: url('logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: auto;
+    aspect-ratio: 1; 
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+/*generale*/
+body {
+    /* display: none; */
+    width: 100vw;
+    height: auto;
+    padding-top: 50px;
+    padding-left: 10px;
+}
+
+/*Sezioni*/
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.title {
+    width: 100%;
+    background-color: black 0.5;
+    margin: 10px 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+ul {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+}
+
+ul ul {
+    padding: 0px;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+audio {
+    /* background-color: pink; */
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    border: red;
+}
+
+.container .column {
+    margin-right: 10px;
+}
