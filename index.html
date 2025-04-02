@@ -205,6 +205,15 @@
             <li class="column">Estratto 3</li>
         </div>
     </ul>  
+
+
+	<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js").then(() => {
+      console.log("Service Worker registered!");
+    });
+  }
+</script>
 </body>
 
 <footer> 
