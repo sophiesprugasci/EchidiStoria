@@ -2,10 +2,10 @@
 html {
     width: 100vw;
     height: 100vh;
-    font-size: 16px;
+    font-size: 26px;
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: medium;
-    background-color: #fcfcfc;
+    background-color: #A1DAEC;
     color: black;
     list-style-type: disc;
     overflow-x: hidden;
@@ -16,7 +16,7 @@ html {
 .pop-up {
     display: none;
     background-color: black;
-    color: white;
+    color: #fcfcfc;
     position: fixed;
     /* top: 50%;
     left: 50%; */
@@ -41,62 +41,56 @@ html {
 }
 
 /*nav*/
-nav .container{
+nav .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fcfcfc;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #A1DAEC;
     color: black;
-    padding:0;
-    position: fixed;
+    padding: 10px;
+    position: absolute;
+    align-self: top;
     top: 0;
     left: 0;
     width: 100%;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin: 0 20px; 
+}
+
+nav .logo {
+    display: block;
+    margin: 0;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 h1 {
-    font-size: 20px;
-    font-weight: 100;
+    font-size: 26px;
+    font-weight: bold;
     margin: 0;
     padding: 0;
-}
-
-.logo-button {
-    background-color: #fcfcfc;
-    background-image: url('logo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 20px;
-    height: auto;
-    aspect-ratio: 1; 
-    border: none;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: 10px;
+    color: black;
+    text-align: left;
 }
 
 /*generale*/
 body {
-    /* display: none; */
     width: 100vw;
     height: auto;
-    padding-top: 50px;
-    padding-left: 10px;
+    padding-top: 350px;
+    padding-left:20px;
 }
 
 /*Sezioni*/
 h2 {
-    font-size: 20px;
-    font-weight: normal;
+    font-size: 26px;
+    font-weight: medium;
 }
 
 .title {
     width: 100%;
     background-color: black 0.5;
-    margin: 10px 0;
+    margin: 20px 0;
     padding: 0;
     cursor: pointer;
 }
@@ -113,6 +107,7 @@ ul ul {
 
 li {
     padding-bottom: 10px;
+    font-size: 20px;
 }
 
 .container {
@@ -131,4 +126,11 @@ audio {
 
 .container .column {
     margin-right: 10px;
+}
+
+.description{
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
 }
